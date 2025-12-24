@@ -1,0 +1,607 @@
+aditya-ubuntu
+    description: Notebook
+    product: 82H8 (LENOVO_MT_82H8_BU_idea_FM_IdeaPad 3 15ITL6)
+    vendor: LENOVO
+    version: IdeaPad 3 15ITL6
+    serial: PF3FDZB1
+    width: 64 bits
+    capabilities: smbios-3.3.0 dmi-3.3.0 smp vsyscall32
+    configuration: administrator_password=disabled boot=normal chassis=notebook family=IdeaPad 3 15ITL6 frontpanel_password=disabled keyboard_password=disabled power-on_password=disabled sku=LENOVO_MT_82H8_BU_idea_FM_IdeaPad 3 15ITL6 uuid=0045e2ad-aec7-2022-0224-085453000000
+  *-core
+       description: Motherboard
+       product: LNVNB161216
+       vendor: LENOVO
+       physical id: 0
+       version: SDK0T76486 WIN
+       serial: PF3FDZB1
+       slot: Type2 - Board Chassis Location
+     *-firmware
+          description: BIOS
+          vendor: LENOVO
+          physical id: 0
+          version: GGCN34WW
+          date: 03/08/2022
+          size: 128KiB
+          capacity: 12MiB
+          capabilities: pci upgrade shadowing cdboot bootselect edd int13floppynec int13floppytoshiba int13floppy360 int13floppy1200 int13floppy720 int13floppy2880 int9keyboard int10video acpi usb biosbootspecification uefi
+     *-cpu
+          description: CPU
+          product: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+          vendor: Intel Corp.
+          physical id: 4
+          bus info: cpu@0
+          version: 6.140.1
+          serial: To Be Filled By O.E.M.
+          slot: U3E1
+          size: 3150MHz
+          capacity: 4100MHz
+          width: 64 bits
+          clock: 100MHz
+          capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 invpcid_single cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities cpufreq
+          configuration: cores=2 enabledcores=2 microcode=180 threads=4
+        *-cache:0
+             description: L1 cache
+             physical id: 6
+             slot: L1 Cache
+             size: 64KiB
+             capacity: 64KiB
+             capabilities: synchronous internal write-back instruction
+             configuration: level=1
+        *-cache:1
+             description: L2 cache
+             physical id: 7
+             slot: L2 Cache
+             size: 2560KiB
+             capacity: 2560KiB
+             capabilities: synchronous internal write-back unified
+             configuration: level=2
+        *-cache:2
+             description: L3 cache
+             physical id: 8
+             slot: L3 Cache
+             size: 6MiB
+             capacity: 6MiB
+             capabilities: synchronous internal write-back unified
+             configuration: level=3
+     *-cache
+          description: L1 cache
+          physical id: 5
+          slot: L1 Cache
+          size: 96KiB
+          capacity: 96KiB
+          capabilities: synchronous internal write-back data
+          configuration: level=1
+     *-memory
+          description: System Memory
+          physical id: 24
+          slot: System board or motherboard
+          size: 8GiB
+        *-bank:0
+             description: SODIMM DDR4 Synchronous 3200 MHz (0.3 ns)
+             product: 4ATF51264HZ-3G2R1
+             vendor: Micron Technology
+             physical id: 0
+             serial: 3442A411
+             slot: Controller0-ChannelA-DIMM0
+             size: 4GiB
+             width: 64 bits
+             clock: 3200MHz (0.3ns)
+        *-bank:1
+             description: Row of chips DDR4 Synchronous 3200 MHz (0.3 ns)
+             product: HMA851S6DJR6N-XN
+             vendor: SK Hynix
+             physical id: 1
+             serial: 00000000
+             slot: Controller1-ChannelA
+             size: 4GiB
+             width: 64 bits
+             clock: 3200MHz (0.3ns)
+     *-pci:0
+          description: Host bridge
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 01
+          width: 32 bits
+          clock: 33MHz
+        *-display
+             description: VGA compatible controller
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             logical name: /dev/fb0
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pciexpress msi pm vga_controller bus_master cap_list rom fb
+             configuration: depth=32 driver=i915 latency=0 mode=1920x1080 resolution=1920,1080 visual=truecolor xres=1920 yres=1080
+             resources: iomemory:600-5ff iomemory:400-3ff irq:153 memory:6002000000-6002ffffff memory:4000000000-400fffffff ioport:4000(size=64) memory:c0000-dffff memory:4010000000-4016ffffff memory:4020000000-40ffffffff
+        *-generic:0
+             description: Signal processing controller
+             product: TigerLake-LP Dynamic Tuning Processor Participant
+             vendor: Intel Corporation
+             physical id: 4
+             bus info: pci@0000:00:04.0
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msi pm bus_master cap_list
+             configuration: driver=proc_thermal latency=0
+             resources: iomemory:600-5ff irq:16 memory:6003200000-600321ffff
+        *-generic:1
+             description: Signal processing controller
+             product: Tigerlake Telemetry Aggregator Driver
+             vendor: Intel Corporation
+             physical id: a
+             bus info: pci@0000:00:0a.0
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pciexpress pm cap_list
+             configuration: driver=intel_vsec latency=0
+             resources: iomemory:600-5ff irq:0 memory:6003230000-6003237fff
+        *-usb:0
+             description: USB controller
+             product: Tiger Lake-LP Thunderbolt 4 USB Controller
+             vendor: Intel Corporation
+             physical id: d
+             bus info: pci@0000:00:0d.0
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi xhci cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: iomemory:600-5ff irq:142 memory:6003220000-600322ffff
+           *-usbhost:0
+                product: xHCI Host Controller
+                vendor: Linux 6.5.0-25-generic xhci-hcd
+                physical id: 0
+                bus info: usb@1
+                logical name: usb1
+                version: 6.05
+                capabilities: usb-2.00
+                configuration: driver=hub slots=1 speed=480Mbit/s
+           *-usbhost:1
+                product: xHCI Host Controller
+                vendor: Linux 6.5.0-25-generic xhci-hcd
+                physical id: 1
+                bus info: usb@2
+                logical name: usb2
+                version: 6.05
+                capabilities: usb-3.10
+                configuration: driver=hub slots=4 speed=10000Mbit/s
+        *-raid
+             description: RAID bus controller
+             product: Volume Management Device NVMe RAID Controller
+             vendor: Intel Corporation
+             physical id: e
+             bus info: pci@0000:00:0e.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: raid msix pciexpress pm bus_master cap_list
+             configuration: driver=vmd latency=0
+             resources: iomemory:600-5ff iomemory:600-5ff irq:0 memory:6000000000-6001ffffff memory:50000000-51ffffff memory:6003100000-60031fffff
+        *-usb:1
+             description: USB controller
+             product: Tiger Lake-LP USB 3.2 Gen 2x1 xHCI Host Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 20
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi xhci cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:143 memory:52100000-5210ffff
+           *-usbhost:0
+                product: xHCI Host Controller
+                vendor: Linux 6.5.0-25-generic xhci-hcd
+                physical id: 0
+                bus info: usb@3
+                logical name: usb3
+                version: 6.05
+                capabilities: usb-2.00
+                configuration: driver=hub slots=12 speed=480Mbit/s
+              *-usb:0
+                   description: Video
+                   product: Integrated Camera
+                   vendor: SunplusIT Inc
+                   physical id: 5
+                   bus info: usb@3:5
+                   version: 56.05
+                   capabilities: usb-2.01
+                   configuration: driver=uvcvideo maxpower=500mA speed=480Mbit/s
+              *-usb:1
+                   description: Bluetooth wireless interface
+                   product: Bluetooth Radio
+                   vendor: Realtek
+                   physical id: a
+                   bus info: usb@3:a
+                   version: 0.00
+                   serial: 00e04c000001
+                   capabilities: bluetooth usb-1.00
+                   configuration: driver=btusb maxpower=500mA speed=12Mbit/s
+           *-usbhost:1
+                product: xHCI Host Controller
+                vendor: Linux 6.5.0-25-generic xhci-hcd
+                physical id: 1
+                bus info: usb@4
+                logical name: usb4
+                version: 6.05
+                capabilities: usb-3.10
+                configuration: driver=hub slots=4 speed=10000Mbit/s
+        *-memory UNCLAIMED
+             description: RAM memory
+             product: Tiger Lake-LP Shared SRAM
+             vendor: Intel Corporation
+             physical id: 14.2
+             bus info: pci@0000:00:14.2
+             version: 20
+             width: 64 bits
+             clock: 33MHz (30.3ns)
+             capabilities: pm bus_master cap_list
+             configuration: latency=0
+             resources: iomemory:600-5ff iomemory:600-5ff memory:600323c000-600323ffff memory:6003246000-6003246fff
+        *-serial:0
+             description: Serial bus controller
+             product: Tiger Lake-LP Serial IO I2C Controller #0
+             vendor: Intel Corporation
+             physical id: 15
+             bus info: pci@0000:00:15.0
+             version: 20
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=intel-lpss latency=0
+             resources: irq:27 memory:4017000000-4017000fff
+        *-serial:1
+             description: Serial bus controller
+             product: Tiger Lake-LP Serial IO I2C Controller #1
+             vendor: Intel Corporation
+             physical id: 15.1
+             bus info: pci@0000:00:15.1
+             version: 20
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=intel-lpss latency=0
+             resources: irq:40 memory:4017001000-4017001fff
+        *-communication:0
+             description: Communication controller
+             product: Tiger Lake-LP Management Engine Interface
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 20
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: iomemory:600-5ff irq:152 memory:6003243000-6003243fff
+        *-sata
+             description: SATA controller
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 17
+             bus info: pci@0000:00:17.0
+             version: 20
+             width: 32 bits
+             clock: 66MHz
+             capabilities: sata msi pm ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:144 memory:52110000-52111fff memory:52114000-521140ff ioport:4080(size=8) ioport:4088(size=4) ioport:4060(size=32) memory:52113000-521137ff
+        *-pci
+             description: PCI bridge
+             product: Tiger Lake-LP PCI Express Root Port #9
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 20
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:122 ioport:3000(size=4096) memory:52000000-520fffff
+           *-network
+                description: Wireless interface
+                product: RTL8822CE 802.11ac PCIe Wireless Network Adapter
+                vendor: Realtek Semiconductor Co., Ltd.
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                logical name: wlp1s0
+                version: 00
+                serial: 00:45:e2:ad:ae:c7
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=rtw_8822ce driverversion=6.5.0-25-generic firmware=N/A ip=10.42.67.119 latency=0 link=yes multicast=yes wireless=IEEE 802.11
+                resources: irq:154 ioport:3000(size=256) memory:52000000-5200ffff
+        *-communication:1
+             description: Communication controller
+             product: Tiger Lake-LP Serial IO UART Controller #0
+             vendor: Intel Corporation
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: 20
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=intel-lpss latency=0
+             resources: irq:16 memory:4017002000-4017002fff
+        *-serial:2
+             description: Serial bus controller
+             product: Tiger Lake-LP Serial IO SPI Controller #1
+             vendor: Intel Corporation
+             physical id: 1e.3
+             bus info: pci@0000:00:1e.3
+             version: 20
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=intel-lpss latency=0
+             resources: irq:37 memory:4017003000-4017003fff
+        *-isa
+             description: ISA bridge
+             product: Tiger Lake-LP LPC Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 20
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+           *-pnp00:00
+                product: PnP device PNP0c02
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:01
+                product: PnP device INT3f0d
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:02
+                product: PnP device PNP0303
+                physical id: 2
+                capabilities: pnp
+                configuration: driver=i8042 kbd
+           *-pnp00:03
+                product: PnP device PNP0c02
+                physical id: 3
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:04
+                product: PnP device PNP0c02
+                physical id: 4
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:05
+                product: PnP device PNP0c02
+                physical id: 5
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:06
+                product: PnP device PNP0c02
+                physical id: 6
+                capabilities: pnp
+                configuration: driver=system
+           *-input
+                product: Ideapad extra buttons
+                physical id: 7
+                logical name: input6
+                logical name: /dev/input/event5
+                capabilities: platform
+        *-multimedia
+             description: Multimedia audio controller
+             product: Tiger Lake-LP Smart Sound Technology Audio Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             logical name: card0
+             logical name: /dev/snd/controlC0
+             logical name: /dev/snd/hwC0D0
+             logical name: /dev/snd/hwC0D2
+             logical name: /dev/snd/pcmC0D0c
+             logical name: /dev/snd/pcmC0D0p
+             logical name: /dev/snd/pcmC0D1c
+             logical name: /dev/snd/pcmC0D1p
+             logical name: /dev/snd/pcmC0D3p
+             logical name: /dev/snd/pcmC0D4p
+             logical name: /dev/snd/pcmC0D5p
+             logical name: /dev/snd/pcmC0D6c
+             logical name: /dev/snd/pcmC0D7c
+             version: 20
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=sof-audio-pci-intel-tgl latency=32
+             resources: iomemory:600-5ff iomemory:600-5ff irq:155 memory:6003238000-600323bfff memory:6003000000-60030fffff
+        *-serial:3
+             description: SMBus
+             product: Tiger Lake-LP SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.4
+             bus info: pci@0000:00:1f.4
+             version: 20
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: iomemory:600-5ff irq:16 memory:6003240000-60032400ff ioport:efa0(size=32)
+        *-serial:4
+             description: Serial bus controller
+             product: Tiger Lake-LP SPI Controller
+             vendor: Intel Corporation
+             physical id: 1f.5
+             bus info: pci@0000:00:1f.5
+             version: 20
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master
+             configuration: driver=intel-spi latency=0
+             resources: irq:0 memory:4f400000-4f400fff
+     *-generic UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1c
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=0
+     *-pci:1
+          description: PCI bridge
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1c.4
+          version: 20
+          width: 32 bits
+          clock: 33MHz
+          capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+          configuration: driver=pcieport
+          resources: irq:146 memory:50000000-501fffff
+        *-nvme
+             description: Non-Volatile memory controller
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 0
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             capabilities: nvme pm msi pciexpress msix nvm_express bus_master cap_list
+             configuration: driver=nvme latency=0
+             resources: irq:-2147483648 memory:50000000-50003fff memory:50004000-50023fff
+  *-battery
+       description: Zinc-Air Battery
+       product: CRB Battery 0
+       vendor: -Virtual Battery 0-
+       physical id: 1
+       version: 08/08/2010
+       serial: Battery 0
+       slot: Fake
+  *-power UNCLAIMED
+       description: OEM Define 1
+       product: OEM Define 5
+       vendor: OEM Define 2
+       physical id: 2
+       version: OEM Define 6
+       serial: OEM Define 3
+       capacity: 75mWh
+  *-nvme0
+       description: NVMe device
+       product: INTEL SSDPEKNW512GZL
+       physical id: 3
+       logical name: /dev/nvme0
+       version: C01C
+       serial: PHKA20660909512A
+       configuration: nqn=nqn.2022-02.com.intel:nvm-subsystem-sn-phka20660909512a state=live
+     *-namespace:0
+          description: NVMe disk
+          physical id: 0
+          logical name: hwmon2
+     *-namespace:1
+          description: NVMe disk
+          physical id: 2
+          logical name: /dev/ng0n1
+     *-namespace:2
+          description: NVMe disk
+          physical id: 1
+          bus info: nvme@0:1
+          logical name: /dev/nvme0n1
+          size: 476GiB (512GB)
+          capabilities: gpt-1.00 partitioned partitioned:gpt
+          configuration: guid=455c186e-fa72-4c1e-b753-280846a98c9f logicalsectorsize=512 sectorsize=512 wwid=eui.5cd2e48221601eb8
+        *-volume:0
+             description: Windows FAT volume
+             vendor: mkfs.fat
+             physical id: 1
+             bus info: nvme@0:1,1
+             logical name: /dev/nvme0n1p1
+             logical name: /boot/efi
+             version: FAT32
+             serial: 7e81-6a80
+             size: 510MiB
+             capacity: 511MiB
+             capabilities: boot fat initialized
+             configuration: FATs=2 filesystem=fat mount.fstype=vfat mount.options=rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro name=EFI System Partition state=mounted
+        *-volume:1
+             description: EXT4 volume
+             vendor: Linux
+             physical id: 2
+             bus info: nvme@0:1,2
+             logical name: /dev/nvme0n1p2
+             logical name: /
+             version: 1.0
+             serial: 79f86de5-74fa-467e-a275-47b0e9a58852
+             size: 476GiB
+             capabilities: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+             configuration: created=2022-07-11 12:19:12 filesystem=ext4 lastmountpoint=/ modified=2024-03-13 10:27:38 mount.fstype=ext4 mount.options=rw,relatime,errors=remount-ro mounted=2024-03-13 10:27:39 state=mounted
+  *-input:0
+       product: Lid Switch
+       physical id: 4
+       logical name: input0
+       logical name: /dev/input/event0
+       capabilities: platform
+  *-input:1
+       product: Power Button
+       physical id: 5
+       logical name: input1
+       logical name: /dev/input/event1
+       capabilities: platform
+  *-input:2
+       product: Video Bus
+       physical id: 6
+       logical name: input10
+       logical name: /dev/input/event6
+       capabilities: platform
+  *-input:3
+       product: sof-hda-dsp Mic
+       physical id: 7
+       logical name: input11
+       logical name: /dev/input/event7
+  *-input:4
+       product: sof-hda-dsp Headphone
+       physical id: 8
+       logical name: input12
+       logical name: /dev/input/event8
+  *-input:5
+       product: sof-hda-dsp HDMI/DP,pcm=3
+       physical id: 9
+       logical name: input13
+       logical name: /dev/input/event9
+  *-input:6
+       product: sof-hda-dsp HDMI/DP,pcm=4
+       physical id: a
+       logical name: input14
+       logical name: /dev/input/event10
+  *-input:7
+       product: sof-hda-dsp HDMI/DP,pcm=5
+       physical id: b
+       logical name: input15
+       logical name: /dev/input/event11
+  *-input:8
+       product: AT Translated Set 2 keyboard
+       physical id: c
+       logical name: input2
+       logical name: /dev/input/event2
+       logical name: input2::capslock
+       logical name: input2::numlock
+       logical name: input2::scrolllock
+       capabilities: i8042
+  *-input:9
+       product: MSFT0001:01 04F3:31BE Mouse
+       physical id: d
+       logical name: input7
+       logical name: /dev/input/event3
+       logical name: /dev/input/mouse0
+       capabilities: i2c
+  *-input:10
+       product: MSFT0001:01 04F3:31BE Touchpad
+       physical id: e
+       logical name: input9
+       logical name: /dev/input/event4
+       logical name: /dev/input/mouse1
+       capabilities: i2c

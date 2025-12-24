@@ -1,0 +1,12 @@
+bulk_rename() {
+	if [ -z "$1" ] || [ -z "$2" ];then
+		echo "Usage : bulk_rename <directory> <prefix>"
+	else
+		counter=1
+		for file in "$1"/*; do
+			mv "$file" "$1/$2_$counter.${file##*.}"
+			((counter++))
+		done
+	fi
+}
+bulk_rename "$1" "$2"
